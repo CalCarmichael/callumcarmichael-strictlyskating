@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="22K-rm-3iT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Strictly Skating Map-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Strictly Skating Map" id="BYZ-38-t0r" customClass="ViewController" customModule="SavedLocations" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,121 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="d7l-nH-YiW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Jnb-Sf-kMJ"/>
+                                </connections>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z1T-Er-iQI">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Locate" id="lVR-fN-cf0">
+                                        <connections>
+                                            <action selector="locateMe:" destination="BYZ-38-t0r" id="vlb-MD-Uoy"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Directions" id="G58-hj-Klr">
+                                        <connections>
+                                            <action selector="showDirections:" destination="BYZ-38-t0r" id="1yO-G8-dCw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="d7l-nH-YiW" secondAttribute="trailing" id="1cM-JQ-BaV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="d7l-nH-YiW" secondAttribute="bottom" id="4M6-9G-ueX"/>
+                            <constraint firstItem="d7l-nH-YiW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="COi-z2-pDN"/>
+                            <constraint firstItem="d7l-nH-YiW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Z3b-VN-z8B"/>
+                            <constraint firstItem="d7l-nH-YiW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gAg-5i-I8l"/>
+                            <constraint firstItem="d7l-nH-YiW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="gPa-9k-Xrb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="d7l-nH-YiW" secondAttribute="bottom" id="kbw-e4-qhR"/>
+                            <constraint firstAttribute="trailing" secondItem="d7l-nH-YiW" secondAttribute="trailing" id="wI9-FJ-V6T"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="d7l-nH-YiW" id="E6P-NF-db2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1349.5999999999999" y="115.59220389805098"/>
+        </scene>
+        <!--Sign InVC-->
+        <scene sceneID="PdS-5x-u1e">
+            <objects>
+                <viewController id="22K-rm-3iT" customClass="SignInVC" customModule="SavedLocations" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yhm-os-f5g"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fs0-uG-ybr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8QX-t3-YmW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMR-Vg-L8m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="641" y="-556"/>
+        </scene>
+        <!--Personal Skate Locations-->
+        <scene sceneID="H0x-je-Ft6">
+            <objects>
+                <tableViewController id="AS7-e8-B2I" customClass="SkateLocationsViewController" customModule="SavedLocations" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ua7-gd-pXc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3a6-GB-jxD">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3a6-GB-jxD" id="mYe-7k-O4W">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="AS7-e8-B2I" id="ZPQ-qZ-1KG"/>
+                            <outlet property="delegate" destination="AS7-e8-B2I" id="enQ-C2-wHf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Personal Skate Locations" id="vmA-ZP-jSY">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="WDk-5L-uNp">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="toMap" id="Y4c-J5-R0A"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="table" destination="ua7-gd-pXc" id="i9C-B5-SD1"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tx4-4J-kso" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="641" y="116"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Icr-cL-hkx">
+            <objects>
+                <navigationController id="UA1-JD-6dz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b7C-8X-N5P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AS7-e8-B2I" kind="relationship" relationship="rootViewController" id="Kv3-UP-mrV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0WJ-nD-DpM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94" y="116"/>
         </scene>
     </scenes>
 </document>

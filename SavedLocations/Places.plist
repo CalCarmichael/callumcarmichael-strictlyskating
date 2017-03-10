@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Kings Park Skate Park</string>
+		<key>latitude</key>
+		<real>50.733009</real>
+		<key>longitude</key>
+		<real>-1.833897</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Slades Farm Skate Park</string>
+		<key>latitude</key>
+		<string>50.748953</string>
+		<key>longitude</key>
+		<string>-1.895742</string>
+	</dict>
+</array>
+</plist>

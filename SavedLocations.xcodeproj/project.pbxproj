@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		107101BDA3888DC6C154F170 /* Pods_SavedLocations.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7739C6E2F87CAEA3A031BAE7 /* Pods_SavedLocations.framework */; };
 		F250198E1E71769900EDC4D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250198D1E71769900EDC4D3 /* AppDelegate.swift */; };
 		F25019901E71769900EDC4D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F250198F1E71769900EDC4D3 /* ViewController.swift */; };
 		F25019931E71769900EDC4D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25019911E71769900EDC4D3 /* Main.storyboard */; };
@@ -14,6 +15,12 @@
 		F25019981E71769900EDC4D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25019961E71769900EDC4D3 /* LaunchScreen.storyboard */; };
 		F25019A31E71769A00EDC4D3 /* SavedLocationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25019A21E71769A00EDC4D3 /* SavedLocationsTests.swift */; };
 		F25019AE1E71769A00EDC4D3 /* SavedLocationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25019AD1E71769A00EDC4D3 /* SavedLocationsUITests.swift */; };
+		F25019BC1E71793B00EDC4D3 /* SkateLocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25019BB1E71793B00EDC4D3 /* SkateLocationsViewController.swift */; };
+		F25019BF1E7187BD00EDC4D3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25019BE1E7187BD00EDC4D3 /* MapKit.framework */; };
+		F25019C11E7187C300EDC4D3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F25019C01E7187C300EDC4D3 /* CoreLocation.framework */; };
+		F27F2F801E731EB300C80285 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F27F2F7F1E731EB300C80285 /* SignInVC.swift */; };
+		F2DA54311E71E9DC00E6598C /* Places.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2DA54301E71E9DC00E6598C /* Places.plist */; };
+		F2DA54331E71F06900E6598C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2DA54321E71F06900E6598C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7739C6E2F87CAEA3A031BAE7 /* Pods_SavedLocations.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SavedLocations.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		964B405CC288C723E1FC46DC /* Pods-SavedLocations.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavedLocations.release.xcconfig"; path = "Pods/Target Support Files/Pods-SavedLocations/Pods-SavedLocations.release.xcconfig"; sourceTree = "<group>"; };
+		F0EF287137632C6DC19AAF6A /* Pods-SavedLocations.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SavedLocations.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SavedLocations/Pods-SavedLocations.debug.xcconfig"; sourceTree = "<group>"; };
 		F250198A1E71769900EDC4D3 /* SavedLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SavedLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F250198D1E71769900EDC4D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F250198F1E71769900EDC4D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +57,12 @@
 		F25019A91E71769A00EDC4D3 /* SavedLocationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SavedLocationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25019AD1E71769A00EDC4D3 /* SavedLocationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocationsUITests.swift; sourceTree = "<group>"; };
 		F25019AF1E71769A00EDC4D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F25019BB1E71793B00EDC4D3 /* SkateLocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkateLocationsViewController.swift; sourceTree = "<group>"; };
+		F25019BE1E7187BD00EDC4D3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F25019C01E7187C300EDC4D3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F27F2F7F1E731EB300C80285 /* SignInVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		F2DA54301E71E9DC00E6598C /* Places.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Places.plist; sourceTree = "<group>"; };
+		F2DA54321E71F06900E6598C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F25019C11E7187C300EDC4D3 /* CoreLocation.framework in Frameworks */,
+				F25019BF1E7187BD00EDC4D3 /* MapKit.framework in Frameworks */,
+				107101BDA3888DC6C154F170 /* Pods_SavedLocations.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0C9F89884898DA3B88672F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0EF287137632C6DC19AAF6A /* Pods-SavedLocations.debug.xcconfig */,
+				964B405CC288C723E1FC46DC /* Pods-SavedLocations.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F25019811E71769800EDC4D3 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +109,8 @@
 				F25019A11E71769A00EDC4D3 /* SavedLocationsTests */,
 				F25019AC1E71769A00EDC4D3 /* SavedLocationsUITests */,
 				F250198B1E71769900EDC4D3 /* Products */,
+				F25019BD1E7187BD00EDC4D3 /* Frameworks */,
+				D0C9F89884898DA3B88672F5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,11 +127,17 @@
 		F250198C1E71769900EDC4D3 /* SavedLocations */ = {
 			isa = PBXGroup;
 			children = (
+				F27F2F7E1E731E7000C80285 /* View */,
+				F27F2F7D1E731E6800C80285 /* Controller */,
+				F27F2F7C1E731E6300C80285 /* Model */,
 				F250198D1E71769900EDC4D3 /* AppDelegate.swift */,
 				F250198F1E71769900EDC4D3 /* ViewController.swift */,
+				F25019BB1E71793B00EDC4D3 /* SkateLocationsViewController.swift */,
 				F25019911E71769900EDC4D3 /* Main.storyboard */,
 				F25019941E71769900EDC4D3 /* Assets.xcassets */,
 				F25019961E71769900EDC4D3 /* LaunchScreen.storyboard */,
+				F2DA54301E71E9DC00E6598C /* Places.plist */,
+				F2DA54321E71F06900E6598C /* GoogleService-Info.plist */,
 				F25019991E71769A00EDC4D3 /* Info.plist */,
 			);
 			path = SavedLocations;
@@ -125,6 +161,38 @@
 			path = SavedLocationsUITests;
 			sourceTree = "<group>";
 		};
+		F25019BD1E7187BD00EDC4D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F25019C01E7187C300EDC4D3 /* CoreLocation.framework */,
+				F25019BE1E7187BD00EDC4D3 /* MapKit.framework */,
+				7739C6E2F87CAEA3A031BAE7 /* Pods_SavedLocations.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F27F2F7C1E731E6300C80285 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F27F2F7D1E731E6800C80285 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F27F2F7F1E731EB300C80285 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F27F2F7E1E731E7000C80285 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +200,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F25019B21E71769A00EDC4D3 /* Build configuration list for PBXNativeTarget "SavedLocations" */;
 			buildPhases = (
+				727DC860DB2F1D31C212C653 /* [CP] Check Pods Manifest.lock */,
 				F25019861E71769800EDC4D3 /* Sources */,
 				F25019871E71769800EDC4D3 /* Frameworks */,
 				F25019881E71769800EDC4D3 /* Resources */,
+				7CE1AD9993ECAE5A21584636 /* [CP] Embed Pods Frameworks */,
+				166AA72E4D65DF3B2716C709 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +305,8 @@
 			files = (
 				F25019981E71769900EDC4D3 /* LaunchScreen.storyboard in Resources */,
 				F25019951E71769900EDC4D3 /* Assets.xcassets in Resources */,
+				F2DA54331E71F06900E6598C /* GoogleService-Info.plist in Resources */,
+				F2DA54311E71E9DC00E6598C /* Places.plist in Resources */,
 				F25019931E71769900EDC4D3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,12 +327,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		166AA72E4D65DF3B2716C709 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SavedLocations/Pods-SavedLocations-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		727DC860DB2F1D31C212C653 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7CE1AD9993ECAE5A21584636 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SavedLocations/Pods-SavedLocations-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F25019861E71769800EDC4D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F25019901E71769900EDC4D3 /* ViewController.swift in Sources */,
+				F25019BC1E71793B00EDC4D3 /* SkateLocationsViewController.swift in Sources */,
+				F27F2F801E731EB300C80285 /* SignInVC.swift in Sources */,
 				F250198E1E71769900EDC4D3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +533,7 @@
 		};
 		F25019B31E71769A00EDC4D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0EF287137632C6DC19AAF6A /* Pods-SavedLocations.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SavedLocations/Info.plist;
@@ -422,6 +546,7 @@
 		};
 		F25019B41E71769A00EDC4D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 964B405CC288C723E1FC46DC /* Pods-SavedLocations.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SavedLocations/Info.plist;
@@ -505,6 +630,7 @@
 				F25019B41E71769A00EDC4D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F25019B51E71769A00EDC4D3 /* Build configuration list for PBXNativeTarget "SavedLocationsTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +639,7 @@
 				F25019B71E71769A00EDC4D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F25019B81E71769A00EDC4D3 /* Build configuration list for PBXNativeTarget "SavedLocationsUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +648,7 @@
 				F25019BA1E71769A00EDC4D3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
